@@ -234,7 +234,7 @@ const App: React.FC = () => {
 
             </div>
             <footer className="text-center text-gray-500 mt-12">
-                <p>Powered by React, Tailwind CSS, and Google Gemini. Built for gamers.</p>
+                <p>all rights reserved © 2025 Free Fire Tournament Results Maker| AL REDOWAN AHMED FAHIM | Facebook <a href="https://www.facebook.com/AR.ERROR.404" target="_blank" rel="noopener noreferrer">AL REDOWAN AHMED FAHIM</a> </p>
             </footer>
         </div>
     );
