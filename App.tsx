@@ -5,7 +5,16 @@ import TournamentForm from './components/TournamentForm';
 import ResultsCard from './components/ResultsCard';
 import { generateTournamentSummary } from './services/geminiService';
 import { DownloadIcon, SparklesIcon } from './components/icons';
-
+import { Analytics } from '@vercel/analytics/react';
+ 
+export default function App() {
+  return (
+    <div>
+      {/* ... */}
+      <Analytics />
+    </div>
+  );
+}
 const App: React.FC = () => {
     const today = new Date().toISOString().split('T')[0];
     const initialMatchId = Date.now();
