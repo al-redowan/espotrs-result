@@ -7,14 +7,8 @@ import { generateTournamentSummary } from './services/geminiService';
 import { DownloadIcon, SparklesIcon } from './components/icons';
 import { Analytics } from '@vercel/analytics/react';
  
-export default function App() {
-  return (
-    <div>
-      {/* ... */}
-      <Analytics />
-    </div>
-  );
-}
+
+     
 const App: React.FC = () => {
     const today = new Date().toISOString().split('T')[0];
     const initialMatchId = Date.now();
@@ -240,7 +234,7 @@ const App: React.FC = () => {
                         isAiAvailable={isAiAvailable}
                     />
                 </div>
-
+ <Analytics />
             </div>
             <footer className="text-center text-gray-500 mt-12">
                 <p>all rights reserved © 2025 Free Fire Tournament Results Maker| AL REDOWAN AHMED FAHIM | Facebook <a href="https://www.facebook.com/AR.ERROR.404" target="_blank" rel="noopener noreferrer">AL REDOWAN AHMED FAHIM</a> </p>
