@@ -233,7 +233,7 @@ const App: React.FC = () => {
                         isAiAvailable={isAiAvailable}
                     />
                 </div>
-<ins style="width: 0px;height:0px" data-width="0" data-height="0" class="zf47ef62e04" data-domain="//data684.click" data-affquery="/5aec18b46f64547bb43d/f47ef62e04/?placementName=default"><script src="//data684.click/js/responsive.js" async></script></ins>
+
             </div>
             <footer className="text-center text-gray-500 mt-12">
                 <p>all rights reserved © 2025 Free Fire Tournament Results Maker| AL REDOWAN AHMED FAHIM | Facebook <a href="https://www.facebook.com/AR.ERROR.404" target="_blank" rel="noopener noreferrer">Profile</a></p>
