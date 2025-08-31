@@ -235,8 +235,10 @@ const App: React.FC = () => {
                 </div>
 
             </div>
+
+         
             <footer className="text-center text-gray-500 mt-12">
-              ajhxnt@gmail.com, itzshimulobayed@gmail.com, berserkerz.ffesports@gmail.com, mr.jojo205@gmail.com, itzrock197@gmail.com, 96shihabff99@gmail.com, elitesx01@gmail.com, abirabir4544@gmail.com, hhmridulyt@gmail.com, mithutecno69@gmail.com, kabirfayejul@gmail.com, protik.talukder.offi@gmail.com  <p>all rights reserved © 2025 Free Fire Tournament Results Maker| AL REDOWAN AHMED FAHIM | Facebook <a href="https://www.facebook.com/AR.ERROR.404" target="_blank" rel="noopener noreferrer">Profile</a></p>
+             <p>all rights reserved © 2025 Free Fire Tournament Results Maker| AL REDOWAN AHMED FAHIM | Facebook <a href="https://www.facebook.com/AR.ERROR.404" target="_blank" rel="noopener noreferrer">Profile</a></p>
             </footer>
             <Analytics />
         </div>
