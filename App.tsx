@@ -5,9 +5,7 @@ import TournamentForm from './components/TournamentForm';
 import ResultsCard from './components/ResultsCard';
 import { generateTournamentSummary } from './services/geminiService';
 import { DownloadIcon, SparklesIcon } from './components/icons';
-import { Analytics } from '@vercel/analytics/react';
 
-     
 const App: React.FC = () => {
     const today = new Date().toISOString().split('T')[0];
     const initialMatchId = Date.now();
@@ -65,7 +63,7 @@ const App: React.FC = () => {
                     }
                 }
                 
-                return { ...player, totalKills, totalPoints, rank: 0 }; 
+                return { ...player, totalKills, totalPoints, rank: 0 };
             })
             .sort((a, b) => {
                 if (b.totalPoints !== a.totalPoints) {
@@ -209,14 +207,14 @@ const App: React.FC = () => {
                             onClick={handleGenerateSummary} 
                             disabled={!isAiAvailable || isLoadingSummary}
                             title={!isAiAvailable ? "AI features are disabled. Please provide an API key." : "Generate AI Hype Summary"}
-                            className="w-full flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-md transition-all duration-200 transf[...]">
+                            className="w-full flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-md transition-all duration-200 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed">
                             <SparklesIcon className="h-6 w-6"/>
                             {isLoadingSummary ? 'Generating...' : 'Generate AI Summary'}
                         </button>
                         <button 
                             onClick={handleDownloadImage}
                             disabled={isDownloading}
-                            className="w-full flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-md transition-all duration-200 transfor[...]">
+                            className="w-full flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-md transition-all duration-200 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed">
                             <DownloadIcon className="h-6 w-6"/>
                             {isDownloading ? 'Downloading...' : 'Download as Image'}
                         </button>
@@ -235,12 +233,9 @@ const App: React.FC = () => {
                 </div>
 
             </div>
-
-         
             <footer className="text-center text-gray-500 mt-12">
-             <p>all rights reserved © 2025 Free Fire Tournament Results Maker| AL REDOWAN AHMED FAHIM | Facebook <a href="https://www.facebook.com/AR.ERROR.404" target="_blank" rel="noopener noreferrer">Profile</a></p>
+                <p>all rights reserved © 2025 Free Fire Tournament Results Maker| AL REDOWAN AHMED FAHIM | Facebook <a href="https://www.facebook.com/AR.ERROR.404" target="_blank" rel="noopener noreferrer">AL REDOWAN AHMED FAHIM</a> </p>
             </footer>
-            <Analytics />
         </div>
     );
 };
